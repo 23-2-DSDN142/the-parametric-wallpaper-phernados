@@ -4,7 +4,7 @@ let rect_height = 20;
 
 
 function setup_wallpaper(pWallpaper) {
-   pWallpaper.output_mode(GLIDE_WALLPAPER);
+   pWallpaper.output_mode(GRID_WALLPAPER);
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(true); //set this to false when you're ready to print
 
@@ -14,7 +14,6 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.grid_settings.row_offset  = 50;
 }
 
-const c = color(255, 204, 0);
 
 
 function wallpaper_background() {
@@ -22,40 +21,59 @@ function wallpaper_background() {
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-  var HeadSize = 40
-  var BodySize =70
-  var EyeSize =5
-  var FlowerC =("#d98d80")
-  var kiwiC =("#7d6b45")
+
+
+//eye
+var eyeLOCX = 60;
+var eyeLOCY = 50;
+var eyeCOL = ("#e6dada")
+
+fill ("eyeCOL")
+ellipse(eyeLOCX,eyeLOCY,70,30) //ball
+fill ("#000000")
+ellipse(eyeLOCX,eyeLOCY,10,30) //puple 
+
+fill ("eyeCOL")
+ellipse(160,150,70,30) //ball
+fill ("#000000")
+ellipse(160,150,10,30) //puple 
+
 
 
 //kiwi
-fill (kiwiC)
-  ellipse(100, 100,BodySize); // draws a circle 45 pixels accross at location 100 pixels accross and 100 pixels down
-  ellipse(80, 80,HeadSize);//head 
+ // var HeadSize = 40
+  //var BodySize =70
+  //var EyeSize =5
+  //var FlowerC =("#d98d80")
+  //var kiwiC =("#7d6b45")
 
-fill  (0, 0, 0)
-  ellipse(85, 80, EyeSize); // eye
 
-  line(70,85,50,100) //beek 
+//fill (kiwiC)
+  //ellipse(100, 100,BodySize); // draws a circle 45 pixels accross at location 100 pixels accross and 100 pixels down
+  //ellipse(80, 80,HeadSize);//head 
 
-  line(100, 130, 100, 150) //leg
-  line(90, 150, 100, 150)
+//fill  (0, 0, 0)
+  //ellipse(85, 80, EyeSize); // eye
 
-fill (FlowerC)
+  //line(70,85,50,100) //beek 
 
-  ellipse(30,150,20,10) //flower
-  ellipse(20,154,20,10)
-  ellipse(40,154,20,10)
-  ellipse(30,158,20,10)
+  //line(100, 130, 100, 150) //leg
+  //line(90, 150, 100, 150)
 
-  ellipse(130,170,20,10) 
-  ellipse(120,174,20,10)
-  ellipse(140,174,20,10)
-  ellipse(130,178,20,10)
+//fill (FlowerC)
 
-  ellipse(180,130,20,10) 
-  ellipse(170,134,20,10)
-  ellipse(190,134,20,10)
-  ellipse(180,138,20,10)
+  //ellipse(30,150,20,10) //flower
+  //ellipse(20,154,20,10)
+  //ellipse(40,154,20,10)
+  //ellipse(30,158,20,10)
+
+  //ellipse(130,170,20,10) 
+  //ellipse(120,174,20,10)
+  //ellipse(140,174,20,10)
+  //ellipse(130,178,20,10)
+
+  //ellipse(180,130,20,10) 
+  //ellipse(170,134,20,10)
+  //ellipse(190,134,20,10)
+  //ellipse(180,138,20,10)
 }
