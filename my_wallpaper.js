@@ -28,11 +28,23 @@ var eyeLOCX = 60;
 var eyeLOCY = 50;
 var eyeCOL = ("#e6dada")
 
+//eye1
 fill ("eyeCOL")
 ellipse(eyeLOCX,eyeLOCY,70,30) //ball
 fill ("#000000")
 ellipse(eyeLOCX,eyeLOCY,10,30) //puple 
+//eye lash
+//make thicker
+strokeWeight(4);
+line (60,35,60,20)
+line (70,35,70,25)
+line (50,35,50,25)
+line (80,38,80,30)
+line (80,38,80,30)
+line (40,38,40,30)
 
+
+//eye2
 fill ("eyeCOL")
 ellipse(160,150,70,30) //ball
 fill ("#000000")
