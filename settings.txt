@@ -8,46 +8,147 @@ Your final settings.txt will look something like this when you are finished:
 
 Wallpaper 1:
 
-//your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
 
-function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
-  pWallpaper.show_guide(false); //set this to false when you're ready to print
-
-  //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 50;
-}
 
 /////////////////////////////////
 
 Wallpaper 2:
 
-//your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+
+/////////////////////////////////
+
+Wallpaper 3:
+
+
+/////////////////////////////////
+
+Wallpaper 4:
+
+
+/////////////////////////////////
+
+Wallpaper 5:
+
+
+/////////////////////////////////
+
+Wallpaper 6:
+
+
+/////////////////////////////////
+
+Wallpaper 7:
+
+//eye
+var eyeNo = (true)
+var eyeLOCX = 50;
+var eyeLOCY = 10;
+
+var eyeCOL = ("#e6dada")
+// colour options #e6dada,#000000
+var eyeLINE =("#000000")
+// colour options #733E29, #ffffff, #000000
+var eyeSIZE = (4)
+var eyeLOCX2 = 100
+var eyeLOCY2 = 100
+
+//rainbow 
+var rainSIZE = 11
+var COL1 = ("#285943") // colour options #285943, #ED6A5A
+var COL2 = ("EDD4B2") // colour options #EDD4B2, #F4F1BB
+var COL3 = ("#2E294E") // colour options #2E294E, #9BC1BC
+var COL4 = ("#F0386B") // colour options #F0386B, #5CA4A9
+var COL5 = ("#1B998B") // colour options #1B998B, #E6EBE0
+
+//eye1 
+if (eyeNo){
+  draweye1(150, 160)
+  }
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
+   pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(A3);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
-
+ 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 0;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+
+/////////////////////////////////
+
+Wallpaper 8:
+
+//eye
+var eyeNo = (true)
+var eyeLOCX = 50;
+var eyeLOCY = 10;
+var eyeCOL = ("#e6dada")
+// colour options #e6dada,#000000
+var eyeLINE =("#000000")
+// colour options #733E29, #ffffff, #000000
+var eyeSIZE = (4)
+var eyeLOCX2 = 150
+var eyeLOCY2 = 250
+
+//rainbow 
+var rainSIZE = 11
+var COL1 = ("#285943") // colour options #285943, #ED6A5A
+var COL2 = ("EDD4B2") // colour options #EDD4B2, #F4F1BB
+var COL3 = ("#2E294E") // colour options #2E294E, #9BC1BC
+var COL4 = ("#F0386B") // colour options #F0386B, #5CA4A9
+var COL5 = ("#1B998B") // colour options #1B998B, #E6EBE0
+
+
+function setup_wallpaper(pWallpaper) {
+   pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(A3);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+ 
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+/////////////////////////////////
+
+Wallpaper 9:
+
+//eye
+var eyeNo = (true)
+var eyeLOCX = 50;
+var eyeLOCY = 10;
+var eyeCOL = ("#e6dada")
+// colour options #e6dada,#000000
+var eyeLINE =("#000000")
+// colour options #733E29, #ffffff, #000000
+var eyeSIZE = (4)
+var eyeLOCX2 = 150
+var eyeLOCY2 = 50
+
+//rainbow 
+var rainSIZE = 0
+var COL1 = ("#285943") // colour options #285943, #ED6A5A
+var COL2 = ("EDD4B2") // colour options #EDD4B2, #F4F1BB
+var COL3 = ("#2E294E") // colour options #2E294E, #9BC1BC
+var COL4 = ("#F0386B") // colour options #F0386B, #5CA4A9
+var COL5 = ("#1B998B") // colour options #1B998B, #E6EBE0
+
+//eye1 
+if (eyeNo){
+draweye1(150, 160)
+}
+
+function setup_wallpaper(pWallpaper) {
+   pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(A3);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+ 
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 100;
 }
